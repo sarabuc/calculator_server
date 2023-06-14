@@ -32,6 +32,11 @@ add_expression(6, 5, "+")
 const app = express()
 app.use(express.static('client'))
 
+app.get('/randWord', function (req, res) {
+    console.log("in rand word EP")
+    res.send("hello")
+})
+
 app.get('/expressions', function (req, res) {
   res.send(expressions)
 })
