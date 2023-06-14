@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="doc.js"></script>
+
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 25%;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <div>
+        <h1>Calculator</h1>
+        <label for="">Num1</label>
+        <input type="number" name="" id="op1">
+        <span> </span>
+        <label for="">Num2</label>
+        <input type="number" name="" id="op2">
+        <br>
+        <br>
+        <button id="plus_btn">+</button>
+        <button id="minus_btn">-</button>
+        <button id="mult_btn">*</button>
+        <button id="div_btn">/</button>
+        <br>
+        <br>
+        <h2 id="ans">Ans is: </h2>
+    </div>
+</body>
+
+</html>
